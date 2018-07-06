@@ -1,0 +1,171 @@
+.clearfix:after{
+    content: ".";
+    display: block; 
+    height: 0; 
+    clear: both; 
+    visibility: hidden;  
+    }   
+.clearfix {
+	display: inline-block;
+    } 
+*{
+	margin: 0px;
+	padding:0px;
+	list-style: none;
+	}
+a{ 
+text-decoration:none; 
+color:#333; 
+} 
+.fifth-column-show-title{
+	width: 1150px;
+	height: 311px;
+	margin:auto auto;
+	padding-top: 50px;
+	padding-bottom:50px;
+}
+.fifth-column-show-title h3{
+	text-align: center;
+	position: relative;
+	height: 30px;
+}
+.fifth-column-show-title h3 span{
+	line-height: 30px;
+}
+.fifth-column-show-title h3 span{
+    font-weight: lighter;
+    color: #a5a5a5;
+}
+.fifth-column-show-title h3 i{
+	position: absolute;
+	width: 80px;
+	height: 25px;
+	display: inline-block;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.title1 h3 i{
+	background-image: url(D:/GitHub/webpage/imooc.com/img/8.PNG);
+}
+.fifth-column-show-title .fifth-column-show-title-pic1{
+	left: 415px;
+}
+.fifth-column-show-title .fifth-column-show-title-pic2{
+	margin-left: 10px;
+}
+.fifth-column-show-row{
+	width: 1170px;
+	height: 265px;
+	margin-top: 20px;
+}
+.fifth-column-show-row-container{
+	margin-right:18px;
+	width: 216px;
+	height: 252px;
+	float: left;
+	position: relative;
+}
+.thelefttopsign{
+	position: absolute;
+	border: 2px solid white;
+	color: white;
+	padding:2px 5px;
+	background-color:#FF6C00; 
+	border-radius: 10px;
+	font-size: 8PX;
+	font-family: dincondm;
+}
+.first{
+	margin-top: -10px;
+	margin-left:-5px;
+}
+.fifth-column-show-column-top{
+	width: 216px;
+	height: 120px;
+    background-size: 100%;
+    border-radius: 10px;
+}
+.one{
+	background-image: url(D:/GitHub/webpage/imooc.com/img/9.jpg);
+}
+.fifth-column-show-row label{
+	color: white;
+	font-size: 12px;
+	font-weight: lighter;
+	background-color: rgba(7,17,27,.4);//rgba背景色透明
+	padding: 3px 5px;
+	border-radius: 10px;
+	position: absolute;
+	top: 90px;
+}
+.fifth-column-show-column-top-firstlabel{
+	left: 10px;
+}
+.fifth-column-show-column-top-secondlabel{
+	left: 50px;
+}
+.fifth-column-show-row h3{
+	width: 200px;
+	height: 45px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-weight: 400;
+	font-size: 16px;
+	text-align:left;
+    overflow:hidden;/*超出部分隐藏*/
+    display:-webkit-box;/*设置盒子样式，-webkit-是兼容前缀*/
+    -webkit-box-orient:vertical;/*设置盒子参考方式*/
+    -webkit-line-clamp:2;/*设置超出多少行显示省略号*/
+}
+.fifth-column-show-row-container i{
+	width: 10px;
+	height: 10px;
+	display: inline-block;
+	background-color: #f7f705;
+	margin-left: 5px;
+}
+.fifth-column-show-column-bottom{
+	margin-left:8px;
+}
+.fifth-column-show-column-bottom span{
+    font-weight: 400;
+	font-size: 10px;
+	margin-right: 5px;
+	color: #989595;
+}
+.fifth-column-show-column-bottom-bottom{
+	margin-top: 10px;
+	font-weight: 400;
+	font-size: 10px;
+	color: #251b1b;
+}
+不同图片设置处  小标签距离调整处
+.onelabel{
+	left:65px;
+}
+.two{
+    background-image: url(D:/GitHub/webpage/imooc.com/img/10.jpg);
+}
+.third{
+    background-image: url(D:/GitHub/webpage/imooc.com/img/11.jpg);
+}
+.fourth{
+    background-image: url(D:/GitHub/webpage/imooc.com/img/12.jpg);
+}
+.fifth{
+    background-image: url(D:/GitHub/webpage/imooc.com/img/13.jpg);
+}
+.fifthlabel{
+	left:55px;
+}
+hr{
+	width:2000px;
+	margin-left:-150px;
+	box-shadow: 1px 1px 8px #bdb6b6;
+}
+span i{
+	background-image: url(D:/GitHub/webpage/组件/img/16.png);
+	background-size: 100%;
+}
+
+

@@ -1,0 +1,39 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	text-decoration: none;
+	list-style: none;
+}
+.lunbotu{
+	width: 1190px;
+	margin:auto auto;
+}
+#lunbotu{
+	height: 720px;
+	width: 400px;
+/*	border: 1px red solid; */
+	margin:auto auto;
+	position: relative;
+	display: block;
+}
+.lunbotu img{
+	height: 720px;
+	width: 400px;
+	position: absolute;
+	display: none;
+}
+.lunbotu ul{
+	position: absolute;
+	left:310px;
+	bottom: 23px;
+	display: block;
+	width: 100px;
+}
+.lunbotu li{
+	background-color: #DDDDDD;
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	margin-right: 8px;
+    float: left;
+}

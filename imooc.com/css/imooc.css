@@ -1,0 +1,1346 @@
+ .clearfix::after {
+ 	content:""; 
+ 	display:block; 
+ 	height:0; 
+ 	visibility:hidden; 
+ 	clear:both; 
+ }
+.clearfix {
+    *zoom:1; 
+}
+*{
+	margin: 0px;
+	padding:0px;
+	list-style: none;
+	}
+input{
+	outline:none;
+}	
+a{ 
+text-decoration:none; 
+color:#333; 
+} 
+body{
+	min-width: 1200px;
+}
+html{
+	min-width: 1200px;
+}
+.header{
+	height:72px;
+	background-color: #fff;
+}
+.headercontainer{
+	height: 72px;
+	width: auto;
+	min-width:1200px;
+}
+.logo{
+	width: 180px;
+	height: 72px;
+	float: left;
+	margin:0 18px 0 24px;
+}
+.logo a{
+	display: block;
+	line-height: 72px;
+	height: 72px;
+}
+.logo a img{
+	height: 72px;
+}
+.headeritem li{
+    float: left;
+}
+.headeritem li a{
+    line-height: 72px;
+    font-size: 16px;
+    color: #4D555D;
+    margin :0px 20px 0px 20px;    
+}
+/*headeritem移入效果*/
+.headeritem li a:hover{
+	color: black;
+}
+/*headeritem移入效果*/
+.icnnew{
+	background-color: red;
+	position: relative;
+	display: inline-block;
+	height: 10px;
+	width: 8px;
+	left: -20px;
+	top: -10px;
+}
+.headerlogin{
+	float: right;
+	width: 350px;
+    height: 72px;
+    margin-right: 10px;
+}
+.headerlogin li{
+    float: right;
+    line-height: 71px;
+}
+.headerlogin li a{
+    font-size: 14px;
+    color: #4D555D;
+    padding :0px 20px 0px 20px;    
+}
+/*登录区域移入效果*/
+.headerlogin li a:hover{
+	color:red;
+}
+/*登录区域移入效果*/
+/*购物车弹窗*/
+.shopcartdisplay{
+	width: 350px;
+	height: 412px;
+	z-index: 1;
+	position: absolute;
+	background-color: white;
+	border-radius: 20px;
+    right: 120px;
+    top: 72px;
+    display: none;
+}
+.shopcartdisplay .firstrow{
+	width: 350px;
+	height: 50px;
+}
+.shopcartdisplay hr{
+	margin:0px 10px;
+	opacity: 0.3;
+}
+.shopcartdisplay .firstrow h1{
+    float:left;
+    font-size: 18px;
+    line-height:50px;
+    margin-left:20px;
+    color: #585757;
+}
+.shopcartdisplay .firstrow h5{
+    float:left;
+    margin-left: 140px;
+    line-height:50px;
+    color: #737479;
+}
+.shopcartdisplay .secondrow{
+	width: 150px;
+	height: 150px;
+	margin:auto auto; 
+	margin-top: 25px;
+}
+.shopcartdisplay .secondrow span img{
+    margin-left: 25px;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+.shopcartdisplay .secondrow h3{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 16px;
+    color: #52535a;
+    margin-bottom: 10px;
+}
+.shopcartdisplay .thirdrow{
+	width: 350px;
+	height: 100px;
+	font-size: 12px;
+}
+.shopcartdisplay .thirdrow h3{
+    text-align: center;
+    color: #848488;
+    margin-top: 10px;
+}
+.shopcartdisplay .thirdrow a{
+    text-align: center;
+    margin-top: 10px;
+    color: red;
+    display: block;
+}
+.shopcartdisplay .fourthrow{
+	width: 350px;
+	height: 78px;
+	font-size: 12px;
+	line-height: 78px;
+}
+.shopcartdisplay .fourthrowone{
+    margin-left: 20px;
+    color: #848488;
+}
+.shopcartdisplay .fourthrowsecond{
+	margin-left: 160px;
+    color: white;
+    font-size: 14px;
+    background: red;
+    border-radius: 15px;
+    padding: 5px 7px;
+}
+/*购物车弹窗*/
+/*下载APP弹框*/
+.downloadappdisplay{
+	z-index: 1;
+	position: absolute;
+	display: none;
+	width: 304px;
+	height: 150px;
+	background-color: #fff;
+	border-radius: 15px;
+	top: 65px;
+	right: 250px;
+}
+.downloadappdisplay img{
+	width: 108px;
+	height: 108px;
+	margin:20px 20px;
+}
+.downloadappdisplayright{
+    width: 150px;
+    height: 108px;
+    float: right;
+}
+.downloadappdisplayright a{
+    top: 20px;
+    margin-top: 20px;
+    display: block;
+}
+.downloadappdisplayright a i{
+	width: 10px;
+	height: 10px;
+	display: inline-block;
+	margin-left:10px;
+
+}
+.downloadappdisplayright .saomiao{
+	font-size: 10px;
+	margin-bottom: 25px;
+}
+.downloadappdisplayright .xiazai{
+	margin-top:10px;
+	background-color: #676565;
+	color: #fff;
+	font-size: 14px;
+	border-radius: 30px;
+	height: 30px;
+	width: 140px;
+	line-height: 30px;
+	text-align: center;
+}
+/*下载APP弹框*/
+.shopcart a{
+	display: inline-block;
+	height: 36px;
+    line-height: 36px;
+    border:1px solid #D9DDE1;
+    border-radius: 36px;
+}
+.headerlogin li span{
+	width: 5px;
+	color: #D9DDE1;
+}
+.searchwarp{
+	width: 210px;
+	height: 50px;
+    display: inline-block;
+    position: relative;
+    top: 0px;
+    top:10px;
+}
+.searchTags{
+}
+.searchTags a{
+	z-index: 100;
+	font-size: 12px;
+	width: 64px;
+	height: 24px;
+    line-height: 50px;
+    background-color: #dbe1e6;
+    padding:0 10px 0 10px;
+    margin-left: 7px;
+    border-radius: 10px;
+    position: relative;
+}
+.searcharea{
+	display: inline-block;
+
+}
+.searcharea input{
+	border-top:none;
+	border-right:none;
+	border-left:none;
+	top: 10px;
+	left: 0px;
+	height: 30px;
+	position: absolute;
+	z-index: 0;
+}
+.showhidesearch{
+    display: inline-block;
+    position: absolute;
+    	top: 10px;
+	left: 175px;
+}
+.showhidesearch span{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background-color: red;
+}
+.main{
+	min-width: 1200px;
+	height: auto;
+}
+.background{
+	height: 480px;
+	background-repeat: no-repeat;
+	background-size: 1450px,100%;
+	opacity:0.2;
+}
+.middle{
+	position: relative;
+	width: 1150px;
+	height: 450px;
+    margin: auto auto;
+    margin-top: -450px;
+    box-shadow: 0px 15px 5px #c0c0c0;
+}
+.middleleft{
+
+	width: 215px;
+	height: 450px;
+	background-color: black;
+	position: relative;	
+}
+.middleleft li{
+	float: left;
+	width: 205px;
+	height: 61.5px;
+	margin-left: 10px;
+	display: inline-block;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+.middleleftfirst{
+	margin-top: 10px;
+}
+.middleleft li a{
+    line-height: 64px;
+	color: #b7afaf;	
+	width: 190px;
+	height: 54px;
+	margin-left: 10px;
+	display: inline-block;
+	text-shadow:1px 1px 5px #e4dddd;	
+}
+/*左边导航栏移入效果*/
+.middleleft li:hover{
+	background-color: rgba(206, 208, 210, 0.4);
+}
+.middleleft li a:hover{
+	color:white;
+}
+.
+/*左边导航栏移入效果*/
+.middleleft li span{
+	line-height: 64px;
+	color: #b7afaf;	
+	float: right;
+	text-shadow:2px 2px 5px #afa1a1;
+}
+/*左导航栏弹出框 前端开发*/
+.submenu{
+	z-index: 1;
+	display: none;
+	position: absolute;
+	width: 768px;
+	height: 450px;
+	top:0px;
+	left: 215px;
+	background-color:#fff; 
+}
+.innerBox{
+	height: 210px;
+	background-color:#fff;
+    padding: 12px 48px 32px;
+    position: relative;
+    min-height: 150px;
+}
+.banner-line{
+	height: 1px;
+	background-color:rgba(77,85,93,.08); 
+	position: relative;
+	margin: 35px 0 23px;
+}
+.banner-line span{
+	position:absolute;
+	top:-10px;
+	font-size: 12px;
+}
+.tag-box{
+	margin-top: 30px;
+}
+.tag-box a:hover{
+	color:red;
+}
+.tag-box a{
+	margin-right: 10px;
+}
+.banner-course-card{
+	width:312px;
+	height: 60px;
+	display: inline-block;
+	margin-right: 48px;
+    margin-bottom: 36px;
+    margin-left: 20px;
+}
+.banner-course-card a{
+	display: block;
+    width: 100%;
+    height: 100%;
+}
+.banner-course-card a img{
+    width: 64px;
+    height: 42px;
+    border-radius: 4px;
+    background-color: #ccc;
+}
+.course-card{
+	float: left;
+	margin-left: 80px;
+	margin-top: -45px;
+}
+.course-card h3{
+	width: 232px;
+    font-size: 12px;
+    color: #07111B;
+    line-height: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.course-card-info{
+    font-size: 12px;
+    color: #4D555D;
+    line-height: 20px;
+}   
+.course-card-info span{
+    margin-right: 12px; 
+}
+.course-card-price{
+    font-size: 12px;
+    color: #4D555D;
+    line-height: 20px;
+}
+/*左导航栏弹出框 前端开发*/
+.middleright{
+	width: 100px;
+	display: inline-block;
+}
+/*轮播图*/
+.lunbotu{
+	width: 100px;
+	height:20px;
+	position: absolute;
+	top:290px;
+	left: 1000px;
+    z-index: 1;
+}
+.lunbotu li{
+	float: left;
+	background-color: black;
+	width: 8px;
+	height: 8px;
+	margin-top: 5px;
+	margin-left: 5px;
+	margin-right: 5px;
+	border-radius: 50%;
+	border:1px solid white;
+}
+.lunbotufangleft{
+	position: absolute;
+	width: 30px;
+	height: 50px;
+	font-size: 25;
+	top: 130px;
+	line-height: 50px;
+	left: 215px;
+	z-index: 1;
+	color: white;
+	text-align: center;
+	text-shadow: 1px 1px 5px rgba(7,17,27,.6);
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+.lunbotufangright{
+	position: absolute;
+	width: 30px;
+	height: 50px;
+	font-size: 25;
+	top: 130px;
+	line-height: 50px;
+	left: 1120px;
+	z-index: 1;
+	color: white;
+	text-align: center;
+	text-shadow: 1px 1px 5px rgba(7,17,27,.6);
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+.lunbotufang a:hover{
+	background-color:rgba(7,17,27,.6);
+}
+/*轮播图*/
+.middlerighttop{
+    width: 935px;
+    height: 315px;
+    position: absolute;
+    left: 215px;
+    top: 0px;
+    display: none;
+    background-size: 100%;
+}
+.middlerightbottom{
+	width: 935px;
+	height: 135px;
+	margin-left:215px;
+	margin-top: -135px;
+}
+
+.middlerightbottominner{
+	width: 187px;
+	height: 135px;
+	float: left;
+	background-color: #fff;
+}
+/*鼠标移上向上悬浮*/
+.middlerightbottom a:hover{
+    margin-top: -5px;
+    height: 140px;
+    transition: all 0.5s;
+}
+.middlerightbottominner i{
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	margin-left:75px; 
+	margin-top: 20px;
+	border-radius:50%; 
+	background-size:100%; 
+}
+.middlerightbottominner p{
+	text-align: center;
+	margin-top: 10px;
+}
+.middlerightbottominner .first{
+	font-size: 16px;
+}
+.middlerightbottominner .second{
+	font-size: 8px;
+	color: #a9a4a4;
+}
+/*实战推荐*/
+.fifth-column-show-title{
+	width: 1150px;
+	height: auto;
+	margin:auto auto;
+	padding-top: 50px;
+	padding-bottom:50px;
+}
+.fifth-column-show-title h3{
+	text-align: center;
+	position: relative;
+	height: 30px;
+}
+.fifth-column-show-title h3 span{
+	line-height: 30px;
+}
+.fifth-column-show-title h3 span{
+    font-weight: lighter;
+    color: #a5a5a5;
+}
+.fifth-column-show-title h3 i{
+	position: absolute;
+	width: 80px;
+	height: 25px;
+	display: inline-block;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.shizhantuijian h3 i{
+	background-image: url(D:/GitHub/webpage/imooc.com/img/8.PNG);
+}
+.fifth-column-show-title .fifth-column-show-title-pic1{
+	left: 415px;
+}
+.fifth-column-show-title .fifth-column-show-title-pic2{
+	margin-left: 10px;
+}
+.fifth-column-show-row{
+	width: 1170px;
+	height: 265px;
+	margin-top: 20px;
+}
+.fifth-column-show-row-container{
+	margin-right:18px;
+	width: 216px;
+	height: 252px;
+	float: left;
+	position: relative;
+}
+/*hover在列表上显示阴影和红色字体*/
+.fifth-column-show-row-container:hover .fifth-column-show-column-top{
+	box-shadow: 0px 8px 0.5px #867d7d;
+	transition: all 0.3s;
+}
+.fifth-column-show-row-container:hover h3{
+	color: red;
+	transition: all 0.3s;
+}
+.thelefttopsign{
+	position: absolute;
+	border: 2px solid white;
+	color: white;
+	padding:2px 5px;
+	background-color:#FF6C00; 
+	border-radius: 10px;
+	font-size: 8PX;
+	font-family: dincondm;
+}
+.first{
+	margin-top: -10px;
+	margin-left:-5px;
+}
+.fifth-column-show-column-top{
+	width: 216px;
+	height: 120px;
+    background-size: 100%;
+    border-radius: 10px;
+}
+.one{
+	background-image: url(D:/GitHub/webpage/imooc.com/img/9.jpg);
+}
+.fifth-column-show-row label{
+	color: white;
+	font-size: 12px;
+	font-weight: lighter;
+	background-color: rgba(7,17,27,.4);
+	padding: 3px 5px;
+	border-radius: 10px;
+	position: absolute;
+	top: 90px;
+}
+.fifth-column-show-column-top-firstlabel{
+	left: 10px;
+}
+.fifth-column-show-column-top-secondlabel{
+	left: 50px;
+}
+.fifth-column-show-row h3{
+	width: 200px;
+	height: 45px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-weight: 400;
+	font-size: 16px;
+	text-align:left;
+    overflow:hidden;/*超出部分隐藏*/
+    display:-webkit-box;/*设置盒子样式，-webkit-是兼容前缀*/
+    -webkit-box-orient:vertical;/*设置盒子参考方式*/
+    -webkit-line-clamp:2;/*设置超出多少行显示省略号*/
+}
+.fifth-column-show-row-container i{
+	width: 10px;
+	height: 10px;
+	display: inline-block;
+	background-color: #f7f705;
+	margin-left: 5px;
+}
+.fifth-column-show-column-bottom{
+	margin-left:8px;
+}
+.fifth-column-show-column-bottom span{
+    font-weight: 400;
+	font-size: 10px;
+	margin-right: 5px;
+	color: #989595;
+}
+.fifth-column-show-column-bottom-bottom{
+	margin-top: 10px;
+	font-weight: 400;
+	font-size: 10px;
+	color: #251b1b;
+}
+.two{
+    background-image: url(D:/GitHub/webpage/imooc.com/img/10.jpg);
+}
+.third{
+    background-image: url(D:/GitHub/webpage/imooc.com/img/11.jpg);
+}
+.fourth{
+    background-image: url(D:/GitHub/webpage/imooc.com/img/12.jpg);
+}
+.fifth{
+    background-image: url(D:/GitHub/webpage/imooc.com/img/13.jpg);
+}
+.fifthlabel{
+	left: 90px;
+}
+/*hr{
+	box-shadow: 1px 1px 8px #bdb6b6;
+	width: 1423px;
+	margin-left: -0px;
+}*/
+span i{
+	background-image: url(D:/GitHub/webpage/组件/img/16.png);
+	background-size: 100%;
+}
+/*新上好课*/
+.six{
+	background-image: url(D:/GitHub/webpage/imooc.com/img/17.jpg);
+}
+.sixlabel{
+	left: 50px;
+}
+.seven{
+	background-image: url(D:/GitHub/webpage/imooc.com/img/18.jpg);
+}
+.sevenlabel{
+	left: 85px;
+}
+.eight{
+	background-image: url(D:/GitHub/webpage/imooc.com/img/19.jpg);
+}
+.nine{
+	background-image: url(D:/GitHub/webpage/imooc.com/img/20.jpg);
+}
+.ten{
+	background-image: url(D:/GitHub/webpage/imooc.com/img/21.jpg);
+}
+.eleven{
+	background-image: url(D:/GitHub/webpage/imooc.com/img/22.jpg);
+}
+.twelve{
+	background-image: url(D:/GitHub/webpage/imooc.com/img/21.jpg);
+}
+.thirteen{
+	background-image: url(D:/GitHub/webpage/imooc.com/img/22.jpg);
+}
+.fourteen{
+	background-image: url(D:/GitHub/webpage/imooc.com/img/23.jpg);
+}
+.fifteen{
+	background-image: url(D:/GitHub/webpage/imooc.com/img/24.jpg);
+}
+.fifteenlabel{
+    left: 60px;
+}
+.fifth-column-show-row label{
+	color: white;
+	font-size: 12px;
+	font-weight: lighter;
+	background-color: rgba(7,17,27,.4);
+	padding: 3px 5px;
+	border-radius: 10px;
+	position: absolute;
+	top: 90px;
+}
+.xinshanghaoke h3 i{
+	background-image: url(D:/GitHub/webpage/imooc.com/img/14.PNG);
+}
+.xinshanghaoke .fifth-column-show-title-pic2{
+	transform:rotate(180deg);
+}
+.xinshanghaoke{
+	height: 500px;
+}
+/*新手入门*/
+/*标题两边图片*/
+.xinshourumen h3 i{
+	background-image: url(D:/GitHub/webpage/imooc.com/img/31.PNG);
+}
+.xinshourumen .fifth-column-show-title-pic2{
+	transform:rotate(180deg);
+}
+.xinshourumen{
+	height: 600px;
+}
+/*新手入门最上面一排两个大div*/
+.second-column-show-row-container{
+	height: 110px;
+	margin-bottom: 40px;
+	margin-top: 20px;
+}
+.second-column-column{
+	float:left;
+	width: 565px;
+	height: 108px;
+	border-radius: 10px;
+	text-align: center;
+}
+.second-column-show-row-container .left{
+	margin-right: 10px;
+}
+.second-column-show-row-container .right{
+	margin-left: 10px;
+}
+.second-column-column .first{
+	margin-top: 35px;
+	font-size: 20px;
+	color: white;
+	font-weight: 600;
+	letter-spacing: 3px;
+}
+.second-column-column .second{
+	font-size: 10px;
+	color: white;
+	font-weight: 600;
+	letter-spacing: 3px;
+}
+/*新手入门底下两排内容换图片*/
+.sixteen{
+	background-image: url(D:/GitHub/webpage/imooc.com/img/32.jpg);
+}
+.seventeen{
+	background-image: url(D:/GitHub/webpage/imooc.com/img/33.jpg);
+}
+.eighteen{
+	background-image: url(D:/GitHub/webpage/imooc.com/img/34.jpg);
+}
+.nineteen{
+	background-image: url(D:/GitHub/webpage/imooc.com/img/35.jpg);
+}
+.twenty{
+	background-image: url(D:/GitHub/webpage/imooc.com/img/36.jpg);
+}
+.twentyone{
+	background-image: url(D:/GitHub/webpage/imooc.com/img/37.jpg);
+}
+.twentytwo{
+	background-image: url(D:/GitHub/webpage/imooc.com/img/38.jpg);
+}
+.twentythree{
+	background-image: url(D:/GitHub/webpage/imooc.com/img/39.jpg);
+}
+.twentyfour{
+	background-image: url(D:/GitHub/webpage/imooc.com/img/40.jpg);
+}
+.twentyfive{
+	background-image: url(D:/GitHub/webpage/imooc.com/img/41.jpg);
+}
+/*技能提升*/
+.fifth-column-show-title-warpper{
+	height: 800px;
+}
+.jinengtisheng{
+	background-color: #f8fafc;
+}
+/*技能提升标题边图片*/
+.jinengtisheng h3 i{
+	background-image: url(D:/GitHub/webpage/imooc.com/img/42.PNG);
+}
+.jinengtisheng .fifth-column-show-title-pic2{
+	transform:rotate(180deg);
+}
+/*精彩手记及猿问*/
+/*标题两边图片*/
+.jingcaishoujijiyuanwen h3 i{
+	background-image: url(D:/GitHub/webpage/imooc.com/img/43.PNG);
+
+}
+.jingcaishoujijiyuanwen .fifth-column-show-title-pic1{
+    left: 360px;
+}
+.jingcaishoujijiyuanwen .fifth-column-show-title-pic2{
+	background-image: url(D:/GitHub/webpage/imooc.com/img/44.PNG);
+/*    left: 490px;*/
+}
+.jingcaishoujijiyuanwen{
+	height: 1700px;
+}
+/*<!-- 精彩手记及猿问 -->*/
+.jingcaishoujijiyuanwen{
+	background-color: #f8fafc;
+}
+.jingcaishoujijiyuanweninner{
+	position: relative;
+}
+dl{
+	position: absolute;
+	width: 308px;
+	padding:32px;
+	margin-right:10px;
+	margin-top: 10px;
+	background-color: #f2f3f5;
+	border-radius: 20px;
+	box-shadow: 1px 1px 5px #bbabab;
+}
+dl img{
+    width: 72px;
+    height: 72px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+dl .title{
+	line-height: 24px;
+    width: 224px;
+    height: 72px;
+    display: inline-block;
+    color: rgba(0,180,60,.8);
+    font-size: 16px;
+    margin-top: 15px;
+}
+.remenhuati{
+	font-size: 10px;
+	color:#fff;
+	font-weight: 800;
+	background-color: rgba(0,180,60,.5);
+	padding:5px 10px;
+	border-radius: 20px;
+}
+dl p{
+	line-height: 24px;
+    color: #4D555D;
+    font-size: 12px;
+    margin-top: 15px;
+    font-weight: 400;
+}
+.liaojiexiangqing a{
+    float:right;
+    color: rgba(0,180,60,.5);
+}
+.liaojiexiangqing{
+	font-size: 12px;
+    line-height: 24px;
+    margin-top: 12px;
+    font-weight: 400;
+}
+.wangqihuigu{
+	position: relative;
+    background-color: #D9DDE1;
+    height: 1px;
+    margin: 24px 0;
+    font-weight: 400;
+}
+.wangqihuigu span{
+    position: absolute;
+    font-size: 12px;
+    padding-right: 12px;
+    color: #93999F;
+    background-color: #f2f3f5;
+    line-height: 16px;
+    top: -8px;
+    left: 0;
+}
+dl .titlebottom{
+	line-height: 24px;
+    width: 224px;
+    height: 72px;
+    display: inline-block;
+    font-size: 14px;
+    color: #545658;
+    margin-top: 10px;
+}
+.shoujiwenzhang{
+	font-size: 10px;
+	color: rgba(0,140,200,.6);
+	font-weight: 800;
+	padding:5px 10px;
+	border-radius: 20px;
+}
+.shoujiwenzhangtitle img{
+    width: 72px;
+    height: 48px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.shoujiwenzhangtitle a{
+	float: left;
+	line-height: 24px;
+    width: 224px;
+    height: auto;
+    display: inline-block;
+    color: black;
+    font-size: 16px;
+    margin-top: 15px;
+}
+/*手记文章hover标题变色*/
+.shoujiwenzhangtitle:hover a{
+	color: rgba(0,140,200,.6);
+}
+.yueduquanwen a{
+    float:right;
+    color: #008CC8;
+}
+.yueduquanwen span{
+    color: #93999F;
+    margin-right:150px;
+}
+.yueduquanwen{
+	font-size: 12px;
+    line-height: 24px;
+    margin-top: 12px;
+    font-weight: 400;
+}
+.shoujiwenzhangone{
+	top: 80px;
+	left: 390px;
+}
+.shoujiwenzhangtwo{
+	top: 80px;
+	left: 780px;
+}
+.shoujiwenzhangthree{
+	top: 455px;
+	left: 390px;
+}
+.shoujiwenzhangfour{
+    top: 480px;
+	left: 780px;
+}
+.shoujiwenzhangfive{
+	top: 785px;
+	left: 0px;
+}
+.shoujiwenzhangsix{
+	top: 800px;
+	left: 390px;
+}
+.xiangguanyuanwenone{
+	top: 875px;
+	left: 780px;
+}
+.xiangguanyuanwen{
+	font-size: 10px;
+	color: rgba(0,180,60,.6);
+	font-weight: 800;
+	padding:5px 10px;
+	border-radius: 20px;
+}
+.xiangguanyuanwentitle{
+	width: 308px;
+	height: auto;
+	color: #00B43C;
+	font-size: 14px;
+	margin-top:10px;
+}
+/*相关猿问标题hover变色*/
+.xiangguanyuanwentitle:hover a{
+	color: rgba(0,180,60,.6);
+}
+.xiangguanyuanwencontent{
+	line-height: 24px;
+    color: #4D555D;
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 0px;
+}
+.huida a{
+	float: right;
+    color: #00B43C;
+    font-size: 12px;
+    line-height: 24px;
+    margin-top: 12px;
+    font-weight: 400;
+}
+.xiangguanyuanwentwo{
+	top: 1130px;
+	left: 0px;
+}
+.xiangguanyuanwenthree{
+	top: 1285px;
+	left: 0px;
+}
+.xiangguanyuanwenfour{
+	top: 1240px;
+	left: 390px;
+}
+.xiangguanyuanwenfive{
+	top: 1145px;
+	left: 780px;
+}
+.xiangguanyuanwensix{
+	top: 1410px;
+	left: 780px;
+}
+/*慕课精英讲师*/
+.mukejingyingjiangshi{
+	height: 350px;
+}
+.fifth-column-show-row-mukejingyingjiangshi{
+	margin-top: 50px;
+}
+.mukejingyingjiangshi .fifth-column-show-title-pic1{
+    background-image: url(D:/GitHub/webpage/imooc.com/img/icon.png);
+    background-position: center -631px;
+    background-size: 100%;
+    left: 360px;
+}
+.mukejingyingjiangshi .fifth-column-show-title-pic2{
+	background-image: url(D:/GitHub/webpage/imooc.com/img/icon.png);
+    background-position: center -683px;
+    background-size: 100%;
+/*    left: 490px;*/
+}
+.mukejingyingjiangshi h3{
+	color: #fff;
+}
+.mukejingyingjiangshi h3 a{
+	position: absolute;
+	color: #fff;
+	font-size: 10px;
+	top:10px;
+	right: 10px;
+	font-weight: 400;
+}
+.mukejingyingjiangshi .fifth-column-show-row-container{
+	background-color:#fff;
+	height: 248px;
+	width:212px;
+	border-radius: 25px;
+}
+/*慕课精英讲师特效*/
+.fifth-column-show-row-container:hover h5{
+	display: none;
+}
+.fifth-column-show-row-container:hover .teachertitle{
+	display: none;
+}
+.fifth-column-show-row-container:hover .teacherds{
+	height: 190px;
+}
+.fifth-column-show-row-container:hover .one{
+	height: 60px;
+	width: 60px;
+}
+.fifth-column-show-row-container:hover .two{
+	height: 60px;
+	width: 60px;
+}
+.fifth-column-show-row-container:hover .three{
+	height: 60px;
+	width: 60px;
+}
+.fifth-column-show-row-container:hover .four{
+	height: 60px;
+	width: 60px;
+}
+.fifth-column-show-row-container:hover .five{
+	height: 60px;
+	width: 60px;
+}
+.mukejingyingjiangshi h5{
+	text-align: center;
+	font-size: 16px;
+	margin-top: 15px;
+}
+.mukejingyingjiangshi .fifth-column-show-column-top{
+    width: 96px;
+    height: 96px;
+    background-image: url(D:/GitHub/webpage/imooc.com/img/56.jpg);
+    background-repeat: no-repeat;
+    margin: auto auto;
+    border-radius: 50%;
+    margin-top: -30px;
+}
+.mukejingyingjiangshi .one{
+    background-image: url(D:/GitHub/webpage/imooc.com/img/56.jpg);
+}
+.teachertitle{
+	font-size: 12px;
+    line-height: 24px;
+    color: #4D555D;
+    text-align: center;
+    margin-top: 10px;
+}
+.teacherds{
+	height: 75px;
+	font-size: 12px;
+    line-height: 24px;
+    color: #4D555D;
+    text-align: center;
+    padding:0 30px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+.mukejingyingjiangshi .two{
+    background-image: url(D:/GitHub/webpage/imooc.com/img/57.jpg);
+}
+.mukejingyingjiangshi .three{
+    background-image: url(D:/GitHub/webpage/imooc.com/img/58.jpg);
+}
+.mukejingyingjiangshi .four{
+    background-image: url(D:/GitHub/webpage/imooc.com/img/59.jpg);
+}
+.mukejingyingjiangshi .five{
+    background-image: url(D:/GitHub/webpage/imooc.com/img/60.jpg);
+}
+.diaozhatianquanmingxing h3{
+	color: black;
+}
+.diaozhatianquanmingxing .fifth-column-show-title-pic1{
+    background-image: url(D:/GitHub/webpage/imooc.com/img/icon.png);
+    background-position: center -733px;
+    background-size: 100%;
+    left: 380px;
+}
+.diaozhatianquanmingxing .fifth-column-show-title-pic2{
+	background-image: url(D:/GitHub/webpage/imooc.com/img/icon.png);
+    background-position: center -733px;
+    background-size: 100%;
+/*    left: 490px;*/
+}
+.diaozhatianquanmingxingfirst{
+	width: 544px;
+	height: 98px;
+	margin:auto auto;
+	position: relative;
+	padding: 0px;
+	margin-top: 20px;
+	background-color: #fff; 
+    border-radius: 20px; 
+    box-shadow: 0px 0px 0px #bbabab;
+}
+.diaozhatianquanmingxingfirst dd{
+	float:left;
+	margin:5px 30px;
+}
+.diaozhatianquanmingxingfirst dd img{
+	width: 56px;
+	height: 56px;
+	border-radius: 50%;
+	box-shadow: 1px 1px 5px red;
+}
+.diaozhatianquanmingxingfirst dd a{
+    margin-left:6px;
+}
+.diaozhatianquanmingxingfirst dd .first{
+    font-size: 14px;
+    color: #07111B;
+    line-height: 16px;
+    margin-top: 8px;
+    margin-left: 0px;
+    text-align: center;
+}
+.diaozhatianquanmingxingfirst dd .second{
+    font-size: 12px;
+    color: #93999F;
+    font-weight: 400;
+    margin-top: 5px;
+    line-height: 12px;
+    margin-left: 0px;
+}
+.diaozhatianquanmingxingfirst dd i{
+    position: absolute;
+    width: 26px;
+    height: 18px;
+    top: 0px;
+    background-size: 100%;
+    background: url(D:/GitHub/webpage/imooc.com/img/champion.png) no-repeat;
+}
+.diaozhatianquanmingxingfirst dd .one{
+	background-size: 100%;
+    left: 51px;
+    background-position: center 0;
+}
+.diaozhatianquanmingxingfirst dd .two{
+    left: 184px;
+    background-size: 100%;
+    background-position: center -18;
+}
+.diaozhatianquanmingxingfirst dd .three{
+    left: 318px;
+    background-size: 100%;
+    background-position: center -36;
+}
+.diaozhatianquanmingxingfirst dd .four{
+    left: 448px;
+    background-size: 100%;
+    background-position: center -54;
+}
+.diaozhatianquanmingxingfirst dd .sp{
+	margin-left: -17px;
+}
+.diaozhatianquanmingxingsecond{
+	margin:auto auto;
+	position: static;
+	padding-top: 20px;
+	width: 888px;
+	height: 152px;
+    background-color: #fff;
+    border-radius: 0px;
+    box-shadow: 0px 0px 0px #fff;
+}
+.diaozhatianquanmingxingsecond dd{
+	float: left;
+	margin:0 15px;
+	margin-top: 30px;
+}
+.diaozhatianquanmingxingsecond a{
+	width: 48px;
+	height: 48px;
+	padding: 0px;
+}
+.diaozhatianquanmingxingsecond img{
+	width: 48px;
+	height: 48px;
+	padding: 0px;
+    border-radius: 50%;
+}
+.diaozhatianquanmingxingsecond .sp{
+	margin-left:55px;
+}
+/*最后部分*/
+.container{
+	height: 60px;
+	padding:36px 0px;
+}
+.footerwrap{
+	position: relative;
+	display: inline-block;
+    width: 200px;
+    height: 60px;
+    float: right;
+    margin-right: 70px;
+}
+.twocolomn{
+	float: right;
+	margin-right: 30px;
+}
+.container i{
+	display: inline-block;
+    width: 32px;
+    height: 32px;
+    background-repeat: no-repeat;
+}
+.container p{
+	margin-top:10px;
+	font-size: 10px;
+	text-align: center;
+}
+.contentfirst{
+	margin-left: 170px;
+}
+/*网页最后部分备注变色*/
+.contentfirst a:hover{
+	color: black;
+}
+.container a{
+	font-size: 14px;
+	color: #afa9a9;
+	margin-right: 10px;
+}
+.contentsecond{
+	margin-left: 170px;
+	margin-top: 17px;
+}
+.twocolomnone{
+    background-position: -0px -221px;
+    margin-left:7px;
+}
+.twocolomntwo{
+    background-position: -53px -221px;
+    margin-left:15px;
+}
